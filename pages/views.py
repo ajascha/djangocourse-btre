@@ -24,4 +24,4 @@ def about(request):
         'realtors': realtors,
         'mvp_realtors': mvp_realtor
     }
-    return render(request, 'pages/about.html')
+    return render(request, 'pages/about.html', context)
