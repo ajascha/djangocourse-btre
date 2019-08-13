@@ -67,7 +67,8 @@ def search(request):
         'state_choices': state_choices,
         'bedroom_choices': bedroom_choices,
         'price_choices': price_choices,
-        'listings': queryset_list
+        'listings': queryset_list,
+        'values': request.GET # Whatever we search for, the value should remain in the box
     }
 
     return render(request, 'listings/search.html', context)
