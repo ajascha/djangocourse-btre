@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 
 def register(request):
     """
@@ -8,7 +9,8 @@ def register(request):
     """
     if request.method == 'POST':
         # Register user
-        return
+        messages.error(request, 'Testing error message')
+        return redirect('register')
     else:
         return render(request, 'accounts/register.html')
 
@@ -17,7 +19,9 @@ def register(request):
 def login(request):
     if request.method == 'POST':
         # Login
-        return
+        messages.error(request, 'Testing error message')
+        return redirect('login')
+
     else:
         return render(request, 'accounts/login.html')
 

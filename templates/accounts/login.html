@@ -12,6 +12,8 @@
                 <i class="fas fa-sign-in-alt"></i> Login</h4>
             </div>
             <div class="card-body">
+                <!-- Alerts -->
+                {% include 'partials/_alerts.html' %}
                 <form action="{% url 'login' %}" method="POST">
                 <!-- CSRF token prevents cross-site forgery. 
                     It ties the form to the current user session.
