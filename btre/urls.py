@@ -7,5 +7,6 @@ urlpatterns = [
     # We are linking to the urls.py of pages app
     path('', include('pages.urls')),
     path('listings/', include('listings.urls')),
+    path('accounts/', include('accounts.urls')),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # For media files to show up in frontend
