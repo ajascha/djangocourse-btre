@@ -8,9 +8,11 @@
                 </span>
             </button>
             <!-- Up until here, all standard Bootstrap -->
-            <strong>
+            <strong>                
                 {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
                     Error:
+                {% elif message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                    Success:
                 {% else %}
                     {{ message.tags | title }}
                 {% endif %}
