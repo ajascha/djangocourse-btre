@@ -25,7 +25,7 @@ SECRET_KEY = 'suh_y^76(!8fwcdw!086+os5c8uivv&s7qc^*m!4)qz@cm-1#f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['glacial-falls-75327.herokuapp.com']
 
 
 # Application definition
